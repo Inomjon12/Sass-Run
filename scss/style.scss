@@ -1,0 +1,26 @@
+$defaultColor: #ffa500;
+
+$widthToBox: 200px;
+$heightToBox: 200px;
+
+@mixin boxStyle() {
+  width: $widthToBox;
+  height: $heightToBox;
+  padding: 1rem;
+  margin: 1rem;
+  background-color: $defaultColor;
+}
+
+.box {
+  @include boxStyle();
+  p {
+    color: #000;
+    text-align: center;
+    font-family: sans-serif;
+  }
+  h1 {
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+  }
+}
